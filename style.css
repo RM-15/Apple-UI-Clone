@@ -1,0 +1,1088 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.top {
+    font-size: 17px;
+    line-height: 25px;
+    letter-spacing: -0.374px;
+    text-align: left;
+    background-color: #f5f5f7;
+    color: #1d1d1f;
+    height: 44px;
+    max-height: 44px;
+    width: 100%;
+    max-width: 1520px;
+    position: fixed;
+    display: block;
+    z-index: 9999;
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    transition: background 0.3s ease, backdrop-filter 0.3s ease;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 44px;
+    font-size: 15px;
+    z-index: 2;
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 0 22px;
+}
+
+#navul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 37px;
+    font-size: 14px;
+}
+
+.navbar span:first-child {
+    font-size: 18px;
+}
+
+.navbar button {
+    border: none;
+    background: none;
+    font-size: 17px;
+}
+
+header a {
+    text-decoration: none;
+    color: #1d1d1f;
+}
+
+header a:visited {
+    color: #1d1d1f;
+}
+
+#nav2 {
+    height: 45px;
+    width: 100%;
+    background-color: white;
+    display: block;
+    position: relative;
+    top: 44px;
+}
+
+#nav2 span {
+    font-size: 16px;
+    text-align: center;
+    line-height: 21px;
+    height: 21px;
+    width: 100%;
+    max-width: 1520px;
+    display: inline-block;
+    letter-spacing: -0.374px;
+    padding: 12px 10px 12px 0;
+}
+
+#nav2 a {
+    text-decoration: none;
+}
+
+#nav2 a:visited {
+    color: #0071e3;
+}
+
+.nav1 {
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.nav3 button {
+    margin: 15px;
+}
+
+.fa-bars {
+    display: none;
+}
+
+/* main section */
+#sec1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: white;
+    text-align: center;
+    gap: 13px;
+    max-width: 1520px;
+    width: 100%;
+}
+
+.iphone {
+    max-width: 1520px;
+    width: 100%;
+    height: 50vh;
+    background-image: url(iphone.jpg);
+    background-position: center;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    position: relative;
+    top: 45px;
+}
+
+.ipadair {
+    max-width: 1520px;
+    width: 100%;
+    height: 50vh;
+    background-image: url(ipad.jpg);
+    background-position: center;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    position: relative;
+    top: 45px;
+    margin-bottom: 45px;
+}
+
+.watch11 {
+    max-width: 1520px;
+    height: 50vh;
+    width: 100%;
+    background-color: #f5f5f7;
+    background-image: url(watch.jpg);
+    background-position: center;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    position: relative;
+}
+
+.a1 {
+    width: 100%;
+    padding-top: 20px;
+    height: 30vh;
+    margin-top: 20px;
+}
+
+.a1 h2 {
+    font-size: clamp(2rem, 8vw, 3.3rem);
+}
+
+.a1 p {
+    font-size: clamp(1.125rem, 3vw, 1.7rem);
+    font-weight: 400;
+}
+
+.a1 a {
+    font-size: clamp(1rem, 2vw, 1.1rem);
+    text-decoration: none;
+}
+
+.a2 {
+    margin: 30px;
+    margin-top: 25px;
+}
+
+.a2 a {
+    margin: 8px;
+}
+
+.c1 {
+    width: 100%;
+    padding-bottom: 30px;
+    height: 30vh;
+    margin-top: 20px;
+}
+
+.c1 h2 {
+    font-size: clamp(2rem, 8vw, 2.5rem);
+}
+
+.c1 a {
+    font-size: clamp(1rem, 2vw, 1.1rem);
+    text-decoration: none;
+}
+
+.c2 {
+    margin-top: 50px;
+}
+
+.d1 {
+    width: 100%;
+    padding-bottom: 30px;
+    height: 30vh;
+    margin-top: 50px;
+}
+
+.d1 h2 {
+    font-size: clamp(2rem, 8vw, 2.7rem);
+}
+
+.d1 p {
+    font-size: clamp(1.125rem, 3vw, 1.4rem);
+    margin-top: 4px;
+}
+
+.d1 a {
+    font-size: clamp(1rem, 2vw, .6rem);
+    padding: 10px 17px 10px 17px;
+    text-decoration: none;
+    margin: 5px;
+
+}
+
+.d2 {
+    margin-top: 30px;
+}
+
+.e1 {
+    width: 100%;
+    padding-top: 30px;
+    height: 30vh;
+    margin-top: 20px;
+}
+
+.e1 h2 {
+    font-size: clamp(2rem, 8vw, 2.4rem);
+}
+
+.e1 p {
+    font-size: clamp(1.3rem, 3vw, 1.4rem);
+    margin-top: px;
+}
+
+.e1 a {
+    font-size: clamp(1rem, 2vw, 1rem);
+    text-decoration: none;
+}
+
+.e2 {
+    margin: 30px;
+    margin-top: 22px;
+}
+
+.e2 a {
+    margin: 8px;
+}
+
+.btn1 {
+    height: 44px;
+    width: 130px;
+    font-size: 20px;
+    line-height: 1.18;
+    font-weight: 400;
+    letter-spacing: -.022em;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 980px;
+    min-width: 28px;
+    text-align: center;
+    padding-left: 21px;
+    padding-right: 21px;
+    padding-top: 7px;
+    padding-bottom: 11px;
+    background-color: #0071e3;
+    color: white;
+    cursor: pointer;
+}
+
+.btn2 {
+    color: #0071e3;
+    height: 44px;
+    width: 140px;
+    font-size: 20px;
+    line-height: 1.18;
+    font-weight: 400;
+    letter-spacing: -.022em;
+    border-style: solid;
+    border-color: #0071e3;
+    border-radius: 980px;
+    border-width: 1px;
+    min-width: 28px;
+    text-align: center;
+    padding-left: 21px;
+    padding-right: 21px;
+    padding-top: 7px;
+    padding-bottom: 11px;
+    cursor: pointer;
+}
+.btn2:hover{
+    background-color: #0071e3;
+    color: white;
+}
+.sec2 {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 13px;
+    max-width: 1520px;
+    width: 100%;
+    margin-top: 13px;
+    margin-left: 13px;
+    margin-right: 26px;
+}
+
+.macbookpro {
+    height: 580px;
+    width: 100%;
+    background-color: black;
+    background-image: url(macbookpro.jpg);
+    background-position: center;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    position: relative;
+    color: white;
+}
+
+.macbookneo {
+    height: 580px;
+    width: 100%;
+    background-color: #f5f5f7;
+    background-image: url(macbook.jpg);
+    background-position: center;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    position: relative;
+}
+
+.macbookair {
+    height: 580px;
+    width: 100%;
+    background-image: url(macbookair.jpg);
+    background-position: center;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    position: relative;
+}
+
+.airpod3 {
+    height: 580px;
+    width: 100%;
+    background-image: url(airpod.jpg);
+    background-position: center;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    position: relative;
+}
+
+.watchultra {
+    width: 100%;
+    height: 580px;
+    background-color: black;
+    color: white;
+    background-image: url(aultra3.jpg);
+    background-position: bottom;
+    background-size: 75% 65%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    position: relative;
+}
+
+.tradein {
+    height: 580px;
+    width: 100%;
+    background-color: #f5f5f7;
+    background-image: url(trade.jpg);
+    background-position: center;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    position: relative;
+}
+
+/* theory */
+.theory {
+    margin-top: 10px;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: -0.12px;
+    background-color: #eaeaee89;
+    width: 100%;
+    max-width: 1520px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.t1 {
+    box-sizing: border-box;
+    min-height: auto;
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 12px 22px;
+    overflow-y: visible;
+}
+
+.t1 ul {
+    list-style: none;
+    margin-bottom: 16px;
+}
+
+.t1 ul li {
+    margin: 12px 0;
+    color: #5e5e62;
+    font-size: 0.801rem;
+}
+
+.t1 u {
+    cursor: pointer;
+}
+
+hr {
+    max-width: 1024px;
+    width: 1024;
+    color: #5e5e62;
+    opacity: 0.5;
+    font-size: 6px;
+}
+
+.t2 {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 12px 22px 0 22px;
+}
+
+.t2 ul {
+    margin-bottom: 25px;
+}
+
+.t2 ul li {
+    margin: 9.5px 0;
+    color: #666668;
+    font-weight: 400;
+    font-size: 13px;
+    list-style-type: none;
+}
+
+.t2 li:first-child {
+    font-weight: 600;
+    color: black;
+}
+
+.sub:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.t3 {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 17px 22px 11px 22px;
+    color: #5e5e62;
+    font-size: 13px;
+}
+
+.t31 a:visited {
+    color: #0071e3;
+}
+
+.t31 {
+    margin-bottom: 19px;
+}
+
+.t32 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 12px 0;
+    height: auto;
+    font-size: 12.8px;
+}
+
+.left {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    font-size: 12px;
+
+}
+
+.Right {
+    font-size: 12px;
+    color: #1d1d1f;
+
+}
+
+.z2 ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.t4 {
+    display: none;
+    padding: 0 22px;
+}
+
+.t4 hr {
+    margin: 10px 0;
+}
+
+.t4 details nav {
+    background-color: #f5f5f7;
+    color: #5e5e62;
+}
+
+.t4 details nav ul {
+    list-style: none;
+    padding: 10px 15px;
+}
+
+.t4 details nav ul li {
+    padding: 5px 0;
+}
+
+summary {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
+summary::after {
+    content: "\02C5";
+    color: #86868b;
+    font-size: 15px;
+    transition: transform 0.2s ease;
+}
+
+details[open] summary::after {
+    transform: rotate(180deg);
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    max-width: 1520px;
+    background-color: white;
+    overflow-x: auto;
+    gap: 20px;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    anchor-name: --container;
+    scroll-marker-group: after;
+    margin-top: -30px;
+}
+
+.container::-webkit-scrollbar {
+    display: none;
+}
+
+.cards {
+    flex: 0 0 80vw;
+    height: 647px;
+    max-width: 1250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    scroll-snap-align: center;
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: center; */
+    font-size: 1.2rem;
+    font-weight: bold;
+    position: relative;
+}
+
+.card1 {
+    background-image: url(plur1bus.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.card2 {
+    background-image: url(severence.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.card3 {
+    background-image: url(monarch.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.card4 {
+    background-image: url(shrinking.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.card5 {
+    background-image: url(slow\ horses.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.card6 {
+    background-image: url(morningshow.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.card7 {
+    background-image: url(hijack.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.card8 {
+    background-image: url(thestudio.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.card9 {
+    background-image: url(the\ movie.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.card10 {
+    background-image: url(yourfriend.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.car1 {
+    font-size: 50px;
+    position: absolute;
+    top: 40px;
+    right: 80px;
+    color: white;
+    z-index: 1000;
+}
+
+.car2 {
+    position: absolute;
+    bottom: 54px;
+    left: 90px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 30px;
+    z-index: 100;
+}
+
+.car2 a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+.car21 {
+    height: 45px;
+    width: 147px;
+    font-size: 20px;
+    line-height: 1.43;
+    font-weight: 400;
+    letter-spacing: -.016em;
+    border-radius: 980px;
+    min-width: 30px;
+    text-align: center;
+    padding: 7px 15px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+}
+
+.car22 {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 20px;
+}
+
+.container::scroll-button(right),
+.container::scroll-button(left) {
+    content: '\003E';
+    border: none;
+    background: transparent;
+    color: #1d1d1f;
+    background-color: #c9c3c394;
+    font-size: 3rem;
+    cursor: pointer;
+    height: 100px;
+    width: 40px;
+    position: fixed;
+    position-anchor: --container;
+    position-area: right center;
+    translate: -50%;
+    display: none;
+}
+
+.container::scroll-button(left) {
+    content: '\003C';
+    position-area: left center;
+    translate: 50%;
+    display: none;
+}
+
+.container::scroll-button(right):disabled,
+.container::scroll-button(left):disabled {
+    opacity: 0;
+    cursor: auto;
+}
+
+.container::scroll-marker-group {
+    display: flex;
+    justify-content: center;
+    gap: .9em;
+    margin-bottom: 20px;
+    margin-top: -30px;
+}
+
+.cards::scroll-marker {
+    content: '';
+    height: 8px;
+    width: 8px;
+    background-color: #868686;
+    border-radius: 50%;
+}
+
+.cards::scroll-marker:target-current {
+    background-color: #1d1d1f;
+}
+
+@media (max-width:1024px) {
+    #navul {
+        display: none;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0;
+        padding: 5px;
+        width: 100%;
+    }
+
+    nav {
+        background: rgba(255, 255, 255, 0.8);
+        backdrop-filter: blur(15px);
+        -webkit-backdrop-filter: blur(15px);
+    }
+
+    .fa-bars {
+        display: block;
+    }
+
+    #nav2 {
+        height: auto;
+    }
+
+    .iphone {
+        background-size: 500% 100%;
+        /* height: 500px; */
+        min-height: 500px;
+    }
+
+    .macbookneo {
+        background-size: 500% 100%;
+        /* height: 500px; */
+        min-height: 500px;
+    }
+
+    .c1 h2 {
+        margin-top: 50px;
+    }
+
+    .ipadair {
+        background-image: url(ipad1.jpg);
+        background-position: bottom;
+        background-size: auto 60%;
+        background-repeat: no-repeat;
+        background-color: rgba(183, 221, 236, 0.989);
+        min-height: 500px;
+    }
+
+    .watch11 {
+        background-size: 220% 100%;
+        min-height: 500px;
+    }
+
+    .watchultra {
+        background-size: contain;
+    }
+
+    .airpod3 {
+        background-size: 200% 100%;
+        min-height: 500px;
+    }
+
+    .tradein {
+        background-size: auto 60%;
+        min-height: auto;
+    }
+
+    .t1 ul {
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .t2 {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .t3 {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    #navul {
+        display: none;
+    }
+
+    .fa-bars {
+        display: inline-block;
+    }
+}
+
+@media (max-width:768px) {
+    .sec2 {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-left: 15px;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .t2 {
+        display: none;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .line {
+        display: none;
+    }
+
+    .t3 {
+        gap: 250px;
+    }
+
+    .t32 {
+        flex-direction: column-reverse;
+        text-align: left;
+        margin: 0;
+        padding: 0;
+        gap: 15px;
+        align-items: flex-start;
+    }
+
+    .left {
+        align-items: flex-start;
+        margin: 0;
+        padding: 0;
+        flex-direction: column;
+        gap: 10px;
+        font-size: 13.5px;
+    }
+
+    .z2 {
+        margin-bottom: 10px;
+        line-height: 15px;
+    }
+
+    .t4 {
+        display: block;
+    }
+
+    .container {
+        height: 587px;
+    }
+
+    .card1 {
+        background-image: url(mplur1bus.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 495px;
+        width: 274px;
+    }
+
+    .card2 {
+        background-image: url(mseverence.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 495px;
+        width: 274px;
+    }
+
+    .card3 {
+        background-image: url(mmonarch.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 495px;
+        width: 274px;
+    }
+
+    .card4 {
+        background-image: url(mshrinking.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 495px;
+        width: 274px;
+    }
+
+    .card5 {
+        background-image: url(mslowhorses.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 495px;
+        width: 274px;
+    }
+
+    .card6 {
+        background-image: url(mthemorningshow.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 495px;
+        width: 274px;
+    }
+
+    .card7 {
+        background-image: url(mhijack.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 495px;
+        width: 274px;
+    }
+
+    .card8 {
+        background-image: url(mthestudio.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 495px;
+        width: 274px;
+    }
+
+    .card9 {
+        background-image: url(mthemovie.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 495px;
+        width: 274px;
+    }
+
+    .card10 {
+        background-image: url(myourfriend.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 495px;
+        width: 274px;
+    }
+
+    .car1 {
+        display: none;
+    }
+
+    .car2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+        gap: 15px;
+        width: 90%;
+        left: 20px;
+        bottom: 20px;
+        font-size: 17px;
+    }
+
+    .car22 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .container::scroll-button(right),
+    .container::scroll-button(left) {
+        display: block;
+    }
+
+    .container::scroll-button(left) {
+        display: block;
+    }
+}
