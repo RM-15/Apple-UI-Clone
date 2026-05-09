@@ -30,10 +30,11 @@ https://github.com/user-attachments/assets/ced2d98f-1bad-4999-84ed-ad1eb186cbe6
 
 <h2>Technical Challenges & Learning </h2>
 <h3>The Apple TV+ Animations</h3>
-<p>Replicating the Apple TV+ carousel was the highlight of this project. Since Apple uses heavy JavaScript for their animations, I had to find a way to mimic that "cinematic zoom" using only <b>CSS Animations</b>.</p>
+<p>Replicating the Apple TV+ carousel was a major highlight. I focused on creating a <b>Slide-Up Reveal</b> effect where the movie details and CTA buttons pop up smoothly from the bottom as the poster scrolls into view.</p>
 <ul>
-  <li><b>The Solution:</b> I collaborated with AI to refine the timing of the <b>Keyframes</b>, ensuring that the scaling and opacity transitions felt smooth rather than robotic.</li>
+  <li><b>The Solution:</b> I used CSS <b>Keyframes</b> to control the vertical translation (moving from <i>translateY</i>) and opacity, ensuring the text "floats" into place with the signature Apple elegance.</li>
 </ul>
+
 
 <h3>Responsive Logic</h3>
 <p>Learning to use the <i>details</i> and <i>summary</i> tags was a game-changer for the footer. It allowed me to build a fully interactive mobile experience while keeping the codebase lightweight and 100% CSS-driven.</p>
