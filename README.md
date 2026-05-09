@@ -5,13 +5,19 @@
 <h2> Project Showreel</h2>
 <h3>1. Hero Section & Scroll Experience</h3>
 <p>Showcasing <i>scroll-snap-type</i> and <i>background-image</i> layering.</p>
-<video src="./images/scrolling.mp4" width="100%" controls></video>
+
+https://github.com/user-attachments/assets/c011030f-b157-457d-ac75-354c04c06b60
+
 <h3>2. Apple TV+ Desktop Animation</h3>
 <p>A cinematic animation sequence built using pure CSS Keyframes.</p>
-<video src="images/apple tv.mp4"></video>
+
+https://github.com/user-attachments/assets/79485d0b-3b32-4dc7-81de-da46059c1306
+
 <h3>3. Responsive Footer</h3>
 <p>Mobile-first accordian using the native HTML <i>&lt;details&gt;</i> and <i>&lt;summary&gt;</i> tags.</p>
-<video src="images/accordian responsiveness.mp4"></video>
+
+https://github.com/user-attachments/assets/ced2d98f-1bad-4999-84ed-ad1eb186cbe6
+
 <h2>Key Features & CSS Techniques</h2>
 <ul>
   <li><b>Glassmorphism Navbar : </b>Created using <i>backdrop-filter: blur()</i>for that iconic traslucent frosted-glass blur.</li>
@@ -25,3 +31,14 @@
 <ul>
   <li> <b>The Solution :</b> I collaborated with AI to refine the timing of the <b>Keyframes</b>, ensuring that the scaling and opacity transitions felt smoooth rather than robotic.</li>
 </ul>
+<h3>Responsive Logic</h3>
+<p>Learning to use the <i>details</i> and <i>summary</i> tag was a game-changer for the footer. It allowed me to build a fully interactive mobile experience while keeping the codebase lightweight and 100% CSS-driven.</p>
+<h2>Project Setup</h2>
+<ol>
+  <li><b>Download/Clone</b> the repository.</li>
+  <li>open <i>index.html</i> in any modern browser.</li>
+  <li>Tip : Use the "Live Preview" extensions in VS Code to see changes in real-time.</li>
+</ol>
+<h2>Disclaimer</h2>
+<p>The Project is for <b>educational purpose only.</b> All design rights and trademarks belongs to <b>Apple Inc.</b></p>
+<h4><b>Developed by Rehan Mansuri</b> (www.linkedin.com/in/rehanm15)</h4>
