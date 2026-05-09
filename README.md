@@ -5,7 +5,7 @@
 <h2> Project Showreel</h2>
 <h3>1. Hero Section & Scroll Experience</h3>
 <p>Showcasing <i>scroll-snap-type</i> and <i>background-image</i> layering.</p>
-<video src="images/scrolling.mp4"></video>
+<video src="./images/scrolling.mp4" width="100%" controls></video>
 <h3>2. Apple TV+ Desktop Animation</h3>
 <p>A cinematic animation sequence built using pure CSS Keyframes.</p>
 <video src="images/apple tv.mp4"></video>
