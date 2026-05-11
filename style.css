@@ -6,40 +6,29 @@
 
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    overflow-x: hidden;
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
 }
 
+/* navbar */
 .top {
-    font-size: 17px;
-    line-height: 25px;
-    letter-spacing: -0.374px;
-    text-align: left;
-    background-color: #f5f5f7;
-    color: #1d1d1f;
-    height: 44px;
-    max-height: 44px;
-    width: 100%;
-    max-width: 1520px;
-    position: fixed;
-    display: block;
-    z-index: 9999;
     background: rgba(255, 255, 255, 0.6);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    transition: background 0.3s ease, backdrop-filter 0.3s ease;
+    height: 44px;
+    width: 100%;
+    position: fixed;
+    z-index: 9999;
 }
 
 .navbar {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     height: 44px;
-    font-size: 15px;
-    z-index: 2;
-    width: 100%;
     max-width: 1024px;
+    width: 100%;
     margin: 0 auto;
     padding: 0 22px;
 }
@@ -47,28 +36,50 @@ body {
 #navul {
     list-style: none;
     display: flex;
-    flex-direction: row;
     gap: 37px;
-    font-size: 14px;
+    margin: 0;
+    padding: 0;
 }
 
-.navbar span:first-child {
-    font-size: 18px;
+#navul li {
+    position: relative;
 }
 
-.navbar button {
+#navul a,
+.heading {
+    text-decoration: none;
+    color: #1d1d1f;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.nav3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.nav3 button {
     border: none;
     background: none;
     font-size: 17px;
+    cursor: pointer;
+    margin: 0 5px;
 }
 
-header a {
+.nav3 a {
+    color: #1d1d1f;
     text-decoration: none;
-    color: #1d1d1f;
 }
 
-header a:visited {
-    color: #1d1d1f;
+.nav1 {
+    font-size: 18px;
+}
+
+.fa-bars {
+    display: none;
 }
 
 #nav2 {
@@ -100,28 +111,16 @@ header a:visited {
     color: #0071e3;
 }
 
-.nav1 {
-    font-size: 18px;
-    margin-right: 10px;
-}
-
-.nav3 button {
-    margin: 15px;
-}
-
-.fa-bars {
-    display: none;
-}
-
 /* main section */
 #sec1 {
     display: grid;
     grid-template-columns: 1fr;
     background-color: white;
     text-align: center;
-    gap: 13px;
+    row-gap: 13px;
     max-width: 1520px;
-    width: 100%;
+    width: 100vw;
+
 }
 
 .iphone {
@@ -247,7 +246,6 @@ header a:visited {
     padding: 10px 17px 10px 17px;
     text-decoration: none;
     margin: 5px;
-
 }
 
 .d2 {
@@ -324,11 +322,38 @@ header a:visited {
     padding-top: 7px;
     padding-bottom: 11px;
     cursor: pointer;
+    transition: 0.5s;
+    position: relative;
+    overflow: hidden;
+    background: transparent;
+    z-index: 1;
 }
-.btn2:hover{
-    background-color: #0071e3;
+
+.btn2::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    transform: scaleX(0);
+    transform-origin: center;
+    left: 0;
+    height: 100%;
+    background: #0071e3;
+    z-index: -1;
+    transition: 0.5s;
+    border-radius: 980px;
+}
+
+.btn2:hover::before {
+    width: 100%;
+    transform: scaleX(1);
+}
+
+.btn2:hover {
     color: white;
+    border: 1px solid white;
+
 }
+
 .sec2 {
     display: grid;
     grid-template-columns: 50% 50%;
@@ -443,7 +468,6 @@ header a:visited {
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
 
 .t1 {
@@ -541,13 +565,11 @@ hr {
     flex-direction: row;
     gap: 30px;
     font-size: 12px;
-
 }
 
 .Right {
     font-size: 12px;
     color: #1d1d1f;
-
 }
 
 .z2 ul {
@@ -604,23 +626,13 @@ details[open] summary::after {
     transform: rotate(180deg);
 }
 
+/* apple tv  */
 .container {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    height: 100vh;
+    position: relative;
     width: 100vw;
-    max-width: 1520px;
-    background-color: white;
-    overflow-x: auto;
-    gap: 20px;
-    -webkit-overflow-scrolling: touch;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-    anchor-name: --container;
-    scroll-marker-group: after;
-    margin-top: -30px;
+    height: 89vh;
+    overflow: hidden;
+    margin: 20px 0;
 }
 
 .container::-webkit-scrollbar {
@@ -628,17 +640,14 @@ details[open] summary::after {
 }
 
 .cards {
-    flex: 0 0 80vw;
-    height: 647px;
-    max-width: 1250px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    scroll-snap-align: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
     display: flex;
-    /* align-items: center; */
-    /* justify-content: center; */
-    font-size: 1.2rem;
-    font-weight: bold;
-    position: relative;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(100%);
+    animation: cardsequence 30s infinite ease-in-out;
 }
 
 .card1 {
@@ -711,6 +720,56 @@ details[open] summary::after {
     background-repeat: no-repeat;
 }
 
+.card1,
+.card1 .car2 {
+    animation-delay: 0s;
+}
+
+.card2,
+.card2 .car2 {
+    animation-delay: 3s;
+}
+
+.card3,
+.card3 .car2 {
+    animation-delay: 6s;
+}
+
+.card4,
+.card4 .car2 {
+    animation-delay: 9s;
+}
+
+.card5,
+.card5 .car2 {
+    animation-delay: 12s;
+}
+
+.card6,
+.card6 .car2 {
+    animation-delay: 15s;
+}
+
+.card7,
+.card7 .car2 {
+    animation-delay: 18s;
+}
+
+.card8,
+.card8 .car2 {
+    animation-delay: 21s;
+}
+
+.card9,
+.card9 .car2 {
+    animation-delay: 24s;
+}
+
+.card10,
+.card10 .car2 {
+    animation-delay: 27s;
+}
+
 .car1 {
     font-size: 50px;
     position: absolute;
@@ -723,12 +782,15 @@ details[open] summary::after {
 .car2 {
     position: absolute;
     bottom: 54px;
-    left: 90px;
+    left: 60px;
     display: flex;
     justify-content: center;
     text-align: center;
     gap: 30px;
     z-index: 100;
+    transform: translateY(100px);
+    opacity: 0;
+    animation: textup 30s infinite ease-in-out;
 }
 
 .car2 a {
@@ -747,12 +809,13 @@ details[open] summary::after {
     border-radius: 980px;
     min-width: 30px;
     text-align: center;
-    padding: 7px 15px;
+    padding: 10px 40px;
     cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #fff;
+    white-space: nowrap;
 }
 
 .car22 {
@@ -764,8 +827,217 @@ details[open] summary::after {
     font-size: 20px;
 }
 
-.container::scroll-button(right),
-.container::scroll-button(left) {
+@keyframes cardsequence {
+    0% {
+        transform: translateX(100%);
+    }
+
+    2% {
+        transform: translateX(0%);
+    }
+
+    10% {
+        transform: translateX(0%);
+    }
+
+    12% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes textup {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+
+    3% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+
+    6% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    10% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    12% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+}
+
+/* apple tv for mobile without animation */
+.container1 {
+    height: 100vh;
+    width: 100vw;
+    max-width: 1520px;
+    background-color: white;
+    overflow-x: auto;
+    gap: 20px;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    anchor-name: --container;
+    scroll-marker-group: after;
+    margin-top: -30px;
+    display: none;
+}
+
+.container1::-webkit-scrollbar {
+    display: none;
+}
+
+.slide {
+    flex: 0 0 80vw;
+    height: 647px;
+    max-width: 1250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    scroll-snap-align: center;
+    display: flex;
+    font-size: 1.2rem;
+    font-weight: bold;
+    position: relative;
+}
+
+.slide1 {
+    background-image: url(images/plur1bus.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.slide2 {
+    background-image: url(images/severence.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.slide3 {
+    background-image: url(images/monarch.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.slide4 {
+    background-image: url(images/shrinking.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.slide5 {
+    background-image: url(images/slow\ horses.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.slide6 {
+    background-image: url(images/morningshow.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.slide7 {
+    background-image: url(images/hijack.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.slide8 {
+    background-image: url(images/thestudio.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.slide9 {
+    background-image: url(images/the\ movie.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.slide10 {
+    background-image: url(images/yourfriend.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.sli1 {
+    font-size: 50px;
+    position: absolute;
+    top: 40px;
+    right: 80px;
+    color: white;
+    z-index: 1000;
+}
+
+.sli2 {
+    position: absolute;
+    bottom: 54px;
+    left: 90px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 30px;
+    z-index: 100;
+}
+
+.sli2 a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+.sli21 {
+    height: 45px;
+    width: 147px;
+    font-size: 20px;
+    line-height: 1.43;
+    font-weight: 400;
+    letter-spacing: -.016em;
+    border-radius: 980px;
+    min-width: 30px;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+}
+
+.sli22 {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 20px;
+}
+
+.container1::scroll-button(right),
+.container1::scroll-button(left) {
     content: '\003E';
     border: none;
     background: transparent;
@@ -782,20 +1054,20 @@ details[open] summary::after {
     display: none;
 }
 
-.container::scroll-button(left) {
+.container1::scroll-button(left) {
     content: '\003C';
     position-area: left center;
     translate: 50%;
     display: none;
 }
 
-.container::scroll-button(right):disabled,
-.container::scroll-button(left):disabled {
+.container1::scroll-button(right):disabled,
+.container1::scroll-button(left):disabled {
     opacity: 0;
     cursor: auto;
 }
 
-.container::scroll-marker-group {
+.container1::scroll-marker-group {
     display: flex;
     justify-content: center;
     gap: .9em;
@@ -803,7 +1075,7 @@ details[open] summary::after {
     margin-top: -30px;
 }
 
-.cards::scroll-marker {
+.slide::scroll-marker {
     content: '';
     height: 8px;
     width: 8px;
@@ -811,10 +1083,11 @@ details[open] summary::after {
     border-radius: 50%;
 }
 
-.cards::scroll-marker:target-current {
+.slide::scroll-marker:target-current {
     background-color: #1d1d1f;
 }
 
+/* media queries */
 @media (max-width:1024px) {
     #navul {
         display: none;
@@ -837,6 +1110,8 @@ details[open] summary::after {
 
     .fa-bars {
         display: block;
+        position: relative;
+        right: 5px;
     }
 
     #nav2 {
@@ -845,13 +1120,11 @@ details[open] summary::after {
 
     .iphone {
         background-size: 500% 100%;
-        /* height: 500px; */
         min-height: 500px;
     }
 
     .macbookneo {
         background-size: 500% 100%;
-        /* height: 500px; */
         min-height: 500px;
     }
 
@@ -912,12 +1185,157 @@ details[open] summary::after {
 }
 
 @media (max-width:768px) {
+    .container {
+        display: none;
+    }
+
+    .container1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        position: relative;
+        height: 540px;
+    }
+
+    .slide1 {
+        background-image: url(images/mplur1bus.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 495px;
+        width: 274px;
+    }
+
+    .slide2 {
+        background-image: url(images/mseverence.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 495px;
+        width: 274px;
+    }
+
+    .slide3 {
+        background-image: url(images/mmonarch.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 495px;
+        width: 274px;
+    }
+
+    .slide4 {
+        background-image: url(images/mshrinking.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 495px;
+        width: 274px;
+    }
+
+    .slide5 {
+        background-image: url(images/mslowhorses.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 495px;
+        width: 274px;
+    }
+
+    .slide6 {
+        background-image: url(images/mthemorningshow.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 495px;
+        width: 274px;
+    }
+
+    .slide7 {
+        background-image: url(images/mhijack.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 495px;
+        width: 274px;
+    }
+
+    .slide8 {
+        background-image: url(images/mthestudio.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 495px;
+        width: 274px;
+    }
+
+    .slide9 {
+        background-image: url(images/mthemovie.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 495px;
+        width: 274px;
+    }
+
+    .slide10 {
+        background-image: url(images/myourfriend.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 495px;
+        width: 274px;
+    }
+
+    .sli1 {
+        display: none;
+    }
+
+    .sli2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+        gap: 15px;
+        right: 100px;
+        bottom: 25px;
+        font-size: 17px;
+    }
+
+    .sli22 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+        width: 300px;
+    }
+
+    .container1::scroll-button(right),
+    .container1::scroll-button(left) {
+        display: block;
+        z-index: 1;
+    }
+
+    .container1::scroll-button(left) {
+        display: block;
+    }
+
+    .container1::scroll-marker-group {
+        margin-top: 1px;
+    }
+
     .sec2 {
         display: grid;
         grid-template-columns: 1fr;
         margin-left: 15px;
         margin-right: 0;
         margin-left: 0;
+    }
+
+    .theory {
+        margin-top: 10px;
     }
 
     .t2 {
@@ -958,133 +1376,6 @@ details[open] summary::after {
     }
 
     .t4 {
-        display: block;
-    }
-
-    .container {
-        height: 587px;
-    }
-
-    .card1 {
-        background-image: url(images/mplur1bus.jpg);
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        height: 495px;
-        width: 274px;
-    }
-
-    .card2 {
-        background-image: url(images/mseverence.jpg);
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        height: 495px;
-        width: 274px;
-    }
-
-    .card3 {
-        background-image: url(images/mmonarch.jpg);
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        height: 495px;
-        width: 274px;
-    }
-
-    .card4 {
-        background-image: url(images/mshrinking.jpg);
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        height: 495px;
-        width: 274px;
-    }
-
-    .card5 {
-        background-image: url(images/mslowhorses.jpg);
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        height: 495px;
-        width: 274px;
-    }
-
-    .card6 {
-        background-image: url(images/mthemorningshow.jpg);
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        height: 495px;
-        width: 274px;
-    }
-
-    .card7 {
-        background-image: url(images/mhijack.jpg);
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        height: 495px;
-        width: 274px;
-    }
-
-    .card8 {
-        background-image: url(images/mthestudio.jpg);
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        height: 495px;
-        width: 274px;
-    }
-
-    .card9 {
-        background-image: url(images/mthemovie.jpg);
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        height: 495px;
-        width: 274px;
-    }
-
-    .card10 {
-        background-image: url(images/myourfriend.jpg);
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        height: 495px;
-        width: 274px;
-    }
-
-    .car1 {
-        display: none;
-    }
-
-    .car2 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column-reverse;
-        gap: 15px;
-        width: 90%;
-        left: 20px;
-        bottom: 20px;
-        font-size: 17px;
-    }
-
-    .car22 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .container::scroll-button(right),
-    .container::scroll-button(left) {
-        display: block;
-    }
-
-    .container::scroll-button(left) {
         display: block;
     }
 }
