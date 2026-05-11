@@ -2,7 +2,7 @@
 <p>A high-fidelity recreation of the Apple homepage focusing on advanced CSS techniques, smooth animations, and a "No-JavaScript" responsive architecture.</p>
 
 <h2>Live Demo</h2>
-<a href="INSERT_YOUR_LINK_HERE">View Live Project</a>
+<a href="(https://rm-15.github.io/Apple-UI-Clone/)">View Live Project</a>
 
 <h2> Project Showreel</h2>
 <h3>1. Hero Section & Scroll Experience</h3>
