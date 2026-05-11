@@ -9,6 +9,7 @@ body {
     overflow-x: hidden;
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
+    background-color: white;
 }
 
 /* navbar */
