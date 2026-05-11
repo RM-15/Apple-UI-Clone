@@ -128,7 +128,7 @@ header a:visited {
     max-width: 1520px;
     width: 100%;
     height: 50vh;
-    background-image: url(iphone.jpg);
+    background-image: url(images/iphone.jpg);
     background-position: center;
     background-size: auto 100%;
     background-repeat: no-repeat;
@@ -145,7 +145,7 @@ header a:visited {
     max-width: 1520px;
     width: 100%;
     height: 50vh;
-    background-image: url(ipad.jpg);
+    background-image: url(images/ipad.jpg);
     background-position: center;
     background-size: auto 100%;
     background-repeat: no-repeat;
@@ -164,7 +164,7 @@ header a:visited {
     height: 50vh;
     width: 100%;
     background-color: #f5f5f7;
-    background-image: url(watch.jpg);
+    background-image: url(images/watch.jpg);
     background-position: center;
     background-size: auto 100%;
     background-repeat: no-repeat;
@@ -345,7 +345,7 @@ header a:visited {
     height: 580px;
     width: 100%;
     background-color: black;
-    background-image: url(macbookpro.jpg);
+    background-image: url(images/macbookpro.jpg);
     background-position: center;
     background-size: auto 100%;
     background-repeat: no-repeat;
@@ -361,7 +361,7 @@ header a:visited {
     height: 580px;
     width: 100%;
     background-color: #f5f5f7;
-    background-image: url(macbook.jpg);
+    background-image: url(images/macbook.jpg);
     background-position: center;
     background-size: auto 100%;
     background-repeat: no-repeat;
@@ -375,7 +375,7 @@ header a:visited {
 .macbookair {
     height: 580px;
     width: 100%;
-    background-image: url(macbookair.jpg);
+    background-image: url(images/macbookair.jpg);
     background-position: center;
     background-size: auto 100%;
     background-repeat: no-repeat;
@@ -389,7 +389,7 @@ header a:visited {
 .airpod3 {
     height: 580px;
     width: 100%;
-    background-image: url(airpod.jpg);
+    background-image: url(images/airpod.jpg);
     background-position: center;
     background-size: auto 100%;
     background-repeat: no-repeat;
@@ -405,7 +405,7 @@ header a:visited {
     height: 580px;
     background-color: black;
     color: white;
-    background-image: url(aultra3.jpg);
+    background-image: url(images/aultra3.jpg);
     background-position: bottom;
     background-size: 75% 65%;
     background-repeat: no-repeat;
@@ -420,7 +420,7 @@ header a:visited {
     height: 580px;
     width: 100%;
     background-color: #f5f5f7;
-    background-image: url(trade.jpg);
+    background-image: url(images/trade.jpg);
     background-position: center;
     background-size: auto 100%;
     background-repeat: no-repeat;
@@ -642,70 +642,70 @@ details[open] summary::after {
 }
 
 .card1 {
-    background-image: url(plur1bus.jpg);
+    background-image: url(images/plur1bus.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .card2 {
-    background-image: url(severence.jpg);
+    background-image: url(images/severence.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .card3 {
-    background-image: url(monarch.jpg);
+    background-image: url(images/monarch.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .card4 {
-    background-image: url(shrinking.jpg);
+    background-image: url(images/shrinking.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .card5 {
-    background-image: url(slow\ horses.jpg);
+    background-image: url(images/slow\ horses.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .card6 {
-    background-image: url(morningshow.jpg);
+    background-image: url(images/morningshow.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .card7 {
-    background-image: url(hijack.jpg);
+    background-image: url(images/hijack.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .card8 {
-    background-image: url(thestudio.jpg);
+    background-image: url(images/thestudio.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .card9 {
-    background-image: url(the\ movie.jpg);
+    background-image: url(images/the\ movie.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .card10 {
-    background-image: url(yourfriend.jpg);
+    background-image: url(images/yourfriend.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -860,7 +860,7 @@ details[open] summary::after {
     }
 
     .ipadair {
-        background-image: url(ipad1.jpg);
+        background-image: url(images/ipad1.jpg);
         background-position: bottom;
         background-size: auto 60%;
         background-repeat: no-repeat;
@@ -966,7 +966,7 @@ details[open] summary::after {
     }
 
     .card1 {
-        background-image: url(mplur1bus.jpg);
+        background-image: url(images/mplur1bus.jpg);
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -975,7 +975,7 @@ details[open] summary::after {
     }
 
     .card2 {
-        background-image: url(mseverence.jpg);
+        background-image: url(images/mseverence.jpg);
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -984,7 +984,7 @@ details[open] summary::after {
     }
 
     .card3 {
-        background-image: url(mmonarch.jpg);
+        background-image: url(images/mmonarch.jpg);
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -993,7 +993,7 @@ details[open] summary::after {
     }
 
     .card4 {
-        background-image: url(mshrinking.jpg);
+        background-image: url(images/mshrinking.jpg);
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -1002,7 +1002,7 @@ details[open] summary::after {
     }
 
     .card5 {
-        background-image: url(mslowhorses.jpg);
+        background-image: url(images/mslowhorses.jpg);
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -1011,7 +1011,7 @@ details[open] summary::after {
     }
 
     .card6 {
-        background-image: url(mthemorningshow.jpg);
+        background-image: url(images/mthemorningshow.jpg);
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -1020,7 +1020,7 @@ details[open] summary::after {
     }
 
     .card7 {
-        background-image: url(mhijack.jpg);
+        background-image: url(images/mhijack.jpg);
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -1029,7 +1029,7 @@ details[open] summary::after {
     }
 
     .card8 {
-        background-image: url(mthestudio.jpg);
+        background-image: url(images/mthestudio.jpg);
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -1038,7 +1038,7 @@ details[open] summary::after {
     }
 
     .card9 {
-        background-image: url(mthemovie.jpg);
+        background-image: url(images/mthemovie.jpg);
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -1047,7 +1047,7 @@ details[open] summary::after {
     }
 
     .card10 {
-        background-image: url(myourfriend.jpg);
+        background-image: url(images/myourfriend.jpg);
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
