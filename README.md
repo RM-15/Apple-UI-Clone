@@ -47,6 +47,6 @@ https://github.com/user-attachments/assets/ced2d98f-1bad-4999-84ed-ad1eb186cbe6
 </ol>
 
 <h2>Disclaimer</h2>
-<p>The project is for <b>educational purposes only.</b> All design rights and trademarks belong to <b>Apple Inc.</b></p>
+<p>The project is for <b>Educational purposes only.</b> All design rights and trademarks belong to <b>Apple Inc.</b></p>
 
 <h4>Developed by <b>Rehan Mansuri</b> - <a href="https://linkedin.com">LinkedIn Profile</a></h4>
